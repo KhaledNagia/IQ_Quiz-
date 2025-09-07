@@ -1,1 +1,14 @@
-*.dart linguist-language=Dart
+# Ignore Flutter platform-specific folders
+android/** linguist-vendored
+ios/** linguist-vendored
+web/** linguist-vendored
+macos/** linguist-vendored
+windows/** linguist-vendored
+linux/** linguist-vendored
+
+# Ignore build files and generated files
+build/** linguist-vendored
+
+# Focus on main Dart files
+lib/** linguist-detectable=true
+test/** linguist-detectable=true*.dart linguist-language=Dart
